@@ -1,4 +1,4 @@
-package com.example.bedmisten.minniewatchfacesimple;
+package com.example.bedmisten.tinkwatchfacesimple;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -226,7 +226,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
         private void initializeBackground() {
             mBackgroundPaint = new Paint();
             mBackgroundPaint.setColor(Color.WHITE);
-            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.minnie_face);
+            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.tink_face);
 
             /* Extracts colors from background image to improve watchface style. */
             Palette.from(mBackgroundBitmap).generate(new Palette.PaletteAsyncListener() {
@@ -509,7 +509,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
             //Time Setup
             float STROKE_WIDTH = 3f;
             mTextPaint = new Paint();
-            mTextPaint.setColor(Color.RED);
+            mTextPaint.setColor(Color.rgb(138,230,250));
             mTextPaint.setStrokeWidth(STROKE_WIDTH);
             mTextPaint.setAntiAlias(true);
             mTextPaint.setStrokeCap(Paint.Cap.ROUND);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bedmisten.minniewatchfacesimple"
+    package="com.example.bedmisten.tinkwatchfacesimple"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.type.watch" />
@@ -30,7 +30,7 @@
             android:required="false"/>
 
         <service
-            android:name=".MyWatchFace"
+            android:name="com.example.bedmisten.tinkwatchfacesimple.MyWatchFace"
             android:label="@string/my_analog_name"
             android:permission="android.permission.BIND_WALLPAPER">
             <meta-data
@@ -57,7 +57,7 @@
         <activity android:name="android.support.wearable.complications.ComplicationHelperActivity"/>
 
         <activity
-            android:name=".ComplicationConfigActivity"
+            android:name="com.example.bedmisten.tinkwatchfacesimple.ComplicationConfigActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.example.bedmisten.watchface.CONFIG_COMPLICATION"/>
